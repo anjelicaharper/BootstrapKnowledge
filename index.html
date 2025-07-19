@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Page</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container mt-5">
+    <!-- Registration Form -->
+    <h2 class="text-center text-primary">Registration Form</h2>
+    <form class="border p-4 shadow-sm bg-light needs-validation" novalidate>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="first-name" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="first-name" placeholder="Enter your first name" required>
+          <div class="invalid-feedback">First name is required.</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="last-name" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="last-name" placeholder="Enter your last name" required>
+          <div class="invalid-feedback">Last name is required.</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+        <div class="invalid-feedback">Password is required.</div>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="terms" required>
+        <label class="form-check-label" for="terms">
+          I agree to the <a href="#">terms and conditions</a>
+        </label>
+        <div class="invalid-feedback">You must agree before submitting.</div>
+      </div>
+
+      <button type="submit" class="btn btn-success w-100">Register</button>
+    </form>
+
+    <!-- User Data Table -->
+    <div class="mt-5">
+      <h3 class="text-center text-white mb-4">Submitted Users (Sample Data)</h3>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered bg-white">
+          <thead class="table-success">
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anjelica</td>
+              <td>Harper</td>
+              <td>anjelica.h@example.com</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Donnie</td>
+              <td>Smith</td>
+              <td>donnie.smith@example.com</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Jane</td>
+              <td>Doe</td>
+              <td>jane.d@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Full-Width Image -->
+    <div class="container-fluid p-0 mt-5">
+      <img src="https://images.unsplash.com/photo-1598646506899-ac6be1000c2f?w=900&auto=format&fit=crop&q=60" alt="Banner Image" class="img-fluid w-100" />
+    </div>
+
+    <!-- Circular Image -->
+    <div class="container text-center my-4">
+      <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.webp?a=1&b=1&s=612x612&w=0&k=20&c=u5RPl326UFf1oyrM1iLFJtqdQ3K28TdBdSaSPKeCrdc=" alt="Profile Image" class="rounded-circle img-fluid" style="max-width: 150px;" />
+      <p class="mt-2 text-white">This is a sample profile image.</p>
+    </div>
+
+    <!-- Two Buttons Section -->
+    <div class="text-center my-5">
+      <button class="btn btn-primary me-3">Always Visible</button>
+      <button class="btn btn-secondary d-none d-md-inline-block">Hidden on Small Screens</button>
+    </div>
+  </div>
+
+</body>
+</html>
